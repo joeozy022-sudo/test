@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@200;300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-steppe-50: #1a1a1a;
+  --color-steppe-100: #F5F2ED;
+  --color-steppe-200: #DED9D0;
+  --color-steppe-300: #5A5A40;
+  --color-steppe-600: #5A5A40;
+  --color-steppe-800: #E6E2D8;
+  --color-steppe-900: #FFFFFF;
+  --color-steppe-950: #F5F2ED;
+
+  --color-charcoal-50: #F5F2ED;
+  --color-charcoal-400: #5A5A40;
+  --color-charcoal-900: #1A1A1A;
+  --color-charcoal-950: #111111;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #F5F2ED;
+  color: #1A1A1A;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  background-color: #F5F2ED;
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F2ED;
+}
+::-webkit-scrollbar-thumb {
+  background: #DED9D0;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5A5A40;
+}
+
+/* Lens Flare ambient effects in our warm light palette */
+.ambient-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(90, 90, 64, 0.04) 0%, rgba(0,0,0,0) 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.ambient-glow-clay {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(222, 217, 208, 0.2) 0%, rgba(0,0,0,0) 70%);
+  filter: blur(50px);
+  pointer-events: none;
+}

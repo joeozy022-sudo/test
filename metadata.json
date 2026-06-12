@@ -1,0 +1,6 @@
+{
+  "name": "Altan Steppe - Premium Ger Experience",
+  "description": "High-end luxury yurt stay and authentic nomadic immersion in the pristine Mongolian steppe.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
